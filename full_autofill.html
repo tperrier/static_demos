@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Demo: Full Autofill</title>
+    <style>
+
+    body {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        max-width:1024px;
+        margin: auto;
+        gap: 1rem;
+    }
+
+    .column {
+        padding: 1rem;
+        margin: auto;
+    }
+
+    @media (max-width: 1024px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .editable {
+        margin-left: 50px;
+        height:200px;
+        width:400px;
+        border: 1px solid black;
+        font-family: monospace;
+        padding:3px;
+    }
+
+    </style>
+  </head>
+  <body>
+
+  <section class="container">
+    <div class="column">
+        <h2> Textarea 1 </h2>
+    <textarea class="editable">I saw both Barbie and Oppenheimer this summer. They were both good.</textarea>
+
+        <h2> Textarea 2 </h2>
+        <textarea class="editable">I found the food to be very good. Would go again.</textarea>
+
+        <h2> Textarea 3 </h2>
+        <textarea class="editable">The refs made a bogus call and completly threw the game.</textarea>
+    </div>
+
+
+    <div class="column">
+        <h2> Content Editable 1 </h2>
+        <div contenteditable="true" class="editable">
+            This text is not in a textarea but it is can still be edited
+            <span style="font-weight:bold; font-color: red"> and even stylized.</span>
+            <p style="font-style: italic">
+            However, you can not add new styles by editing this field. To that you need <b>Javascript</b>
+            </p>
+            In a content editable div you can have listitems.
+            <ul>
+                <li> This is the first item </li>
+                <li> This is the second item </li>
+                <li> This is the third item </li>
+            </ul>
+        </div>
+
+        <h2> Content Editable 2 </h2>
+        <div contenteditable="plaintext-only" class="editable">This is a plaintext-only contenteditable. You should not be able to <b>style</b> text.
+        <i>But for some reason you can ¯\_(ツ)_/¯<i>
+        Really all "plaintex-only" does is make \n a new line and preserves whitespace.
+        </div>
+
+        <h2> Content Editable 3 </h2>
+        <div contenteditable="true" class="editable">
+            These tools really <b>work!</b>. For the price they are 100% worth it. 4.5 stars.
+        </div>
+    </div>
+
+
+  </body>
+</html>

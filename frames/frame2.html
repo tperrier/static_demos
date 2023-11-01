@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Demo: Full Autofill with Frames</title>
+    <style>
+
+    body {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .container {
+        max-width:1200px;
+        margin: auto;
+    }
+
+    .three-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        margin: auto;
+        gap: 1rem;
+    }
+
+    .column {
+        padding: 1rem;
+        margin: auto;
+    }
+
+    @media (max-width: 1200px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .editable {
+        margin-left: 50px;
+        height:200px;
+        width:300px;
+        border: 1px solid black;
+        font-family: monospace;
+        padding:3px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <h2> Frame 2 </h2>
+        <div class="column">
+            <h3> Textarea </h3>
+            <textarea class="editable">I found the food to be very good. Would go again.</textarea>
+
+            <h3> Content Editable </h3>
+            <div contenteditable="true" class="editable">
+                These tools really <b>work!</b>. For the price they are 100% worth it. 4.5 stars.
+            </div>
+        </div>
+  </body>
+</html>

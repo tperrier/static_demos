@@ -30,6 +30,11 @@
         }
     }
 
+    [contenteditable=true]:empty:before{
+        content: attr(placeholder);
+        color:gray;
+    }
+
     .editable {
         margin-left: 50px;
         height:200px;
@@ -45,8 +50,8 @@
 
   <section class="container">
     <div class="column">
-        <h2> Textarea 1 </h2>
-    <textarea class="editable">I saw both Barbie and Oppenheimer this summer. They were both good.</textarea>
+        <h2> Empty Textarea 1 </h2>
+    <textarea class="editable" placeholder="Enter some text here ..."></textarea>
 
         <h2> Textarea 2 </h2>
         <textarea class="editable">I found the food to be very good. Would go again.</textarea>
@@ -57,10 +62,13 @@
 
 
     <div class="column">
-        <h2> Content Editable 1 </h2>
+        <h2> Empty Content Editable 1 </h2>
+        <div contenteditable="true" class="editable" placeholder="This is a content editable..."></div>
+
+        <h2> Content Editable 2 </h2>
         <div contenteditable="true" class="editable">
-            This text is not in a textarea but it is can still be edited
-            <span style="font-weight:bold; font-color: red"> and even stylized.</span>
+            <span> This text is not in a textarea but it is can still be edited </span>
+            <span style="font-weight:bold; color: red"> and even stylized.</span>
             <p style="font-style: italic">
             However, you can not add new styles by editing this field. To that you need <b>Javascript</b>
             </p>
@@ -70,12 +78,6 @@
                 <li> This is the second item </li>
                 <li> This is the third item </li>
             </ul>
-        </div>
-
-        <h2> Content Editable 2 </h2>
-        <div contenteditable="plaintext-only" class="editable">This is a plaintext-only contenteditable. You should not be able to <b>style</b> text.
-        <i>But for some reason you can ¯\_(ツ)_/¯</i>
-        Really all "plaintex-only" does is make \n a new line and preserves whitespace.
         </div>
 
         <h2> Content Editable 3 </h2>

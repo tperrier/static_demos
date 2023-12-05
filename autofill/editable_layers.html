@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Demo: Editables inside editables</title>
+    <style>
+
+    body {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .container {
+        max-width:1024px;
+        margin: auto;
+    }
+
+    .editable {
+        margin-left: 50px;
+        height:200px;
+        width:100%;
+        padding: 15px;
+        font-family: monospace;
+        border: 3px dashed black;
+    }
+
+    .noteditable {
+        margin: 25px;
+        padding: 15px;
+        border: 3px dashed red;
+    }
+
+    </style>
+  </head>
+  <body>
+
+  <section class="container">
+        <h2> The main editable </h2>
+        <div contenteditable="true" class="editable">
+            <div>The parent DIV is editable.</div>
+            <div>So you can edit this sentence.</div>
+            <div contenteditable="false" class="noteditable">
+                <div>This red box is not editable.</div>
+                <div>So this sentence isn't editable either.</div>
+            </div>
+
+            This is still in the parent div, and editable.
+
+        </div>
+  </section>
+
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Demo: Editables inside editables</title>
+    <style>
+
+    html, body {
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+    }
+
+    .container {
+        max-width:1024px;
+        margin: auto;
+    }
+
+    .editable {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+        padding: 15px;
+        font-family: monospace;
+        border: 3px dashed black;
+    }
+
+    [contenteditable=true]:empty:before{
+        content: attr(placeholder);
+        color:gray;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div contenteditable="true" class="editable" placeholder="You can write an essay in this large div..."></div>
+  </body>
+</html>

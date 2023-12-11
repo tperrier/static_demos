@@ -51,22 +51,22 @@
   <section class="container">
     <div class="column">
         <h2> Empty Textarea 1 </h2>
-    <textarea class="editable" placeholder="Enter some text here ..."></textarea>
+    <textarea class="editable" placeholder="Enter some text here ..." tabindex="1"></textarea>
 
         <h2> Textarea 2 </h2>
-        <textarea class="editable">I found the food to be very good. Would go again.</textarea>
+        <textarea class="editable" tabindex="2">I found the food to be very good. Would go again.</textarea>
 
         <h2> Textarea 3 </h2>
-        <textarea class="editable">The refs made a bogus call and completly threw the game.</textarea>
+        <textarea class="editable" tabindex="3">The refs made a bogus call and completly threw the game.</textarea>
     </div>
 
 
     <div class="column">
         <h2> Empty Content Editable 1 </h2>
-        <div contenteditable="true" class="editable" placeholder="This is a content editable..."></div>
+        <div contenteditable="true" class="editable" placeholder="This is a content editable..." tabindex="1"></div>
 
         <h2> Content Editable 2 </h2>
-        <div contenteditable="true" class="editable">
+        <div contenteditable="true" class="editable" tabindex="2">
             This text is not in a textarea but it is can still be edited
             <span style="font-weight:bold; color: red"> and even stylized.</span>
             <p style="font-style: italic">
@@ -82,7 +82,7 @@
 
         <h2> Content Editable 3 </h2>
         <div> This is a mutli-level content editable with a main parent editable.</div>
-        <div contenteditable="true" class="editable">
+        <div contenteditable="true" class="editable" tabindex="3">
             <div>
                 <p> These tools really <b>work!</b>.</p>
                 <p> For the price they are 100% worth it. 4.5 stars.  </p>

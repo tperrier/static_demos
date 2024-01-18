@@ -1,0 +1,26 @@
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+            <style>
+                .description {
+                    font-style:italic;
+                }
+            </style>
+            <script>
+                var dirUp = function() {
+                    var idx = window.location.href.lastIndexOf("/");
+                    window.location = window.location.href.substring(0,idx);
+                }
+            </script>
+    </head>
+    <body>
+        <h1>Form response</h1>
+        <div class="description">
+            This is the response form. There is no content here, please select where you want to go next.
+            Thank you for testing this form. Please come back again soon.
+        </div>
+        <br>
+        <input type="button" onclick="window.history.back()" value="← Back">
+        <input type="button" onclick="dirUp()" value="↑ Index">
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html lang="sw">
+    <meta charset="utf-8">
+    <head>
+            <style>
+                .description {
+                    font-style:italic;
+                }
+            </style>
+            <script>
+                var dirUp = function() {
+                    var idx = window.location.href.lastIndexOf("/");
+                    window.location = window.location.href.substring(0,idx);
+                }
+            </script>
+    </head>
+    <body>
+		<h1>Jibu la fomu</h1>
+            <div class="description">
+		<div class="description">
+            Hii ndio fomu ya majibu. Hakuna maudhui hapa, tafadhali chagua unapotaka kwenda zaidi.
+            Asante kwa kujaribu fomu hii. Siku njema.
+        </div>
+        <br>
+        <input type="button" onclick="window.history.back()" value="← Kielezo">
+        <input type="button" onclick="dirUp()" value="↑ Cha Nyuma">
+    <body>
+</html>

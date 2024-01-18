@@ -1,0 +1,26 @@
+<html lang="af" >
+    <meta charset="utf-8">
+    <head>
+            <style>
+                .description {
+                    font-style:italic;
+                }
+            </style>
+            <script>
+                var dirUp = function() {
+                    var idx = window.location.href.lastIndexOf("/");
+                    window.location = window.location.href.substring(0,idx);
+                }
+            </script>
+    </head>
+    <body>
+        <h1>Vorm reaksie</h1>
+        <div class="description">
+            Dit is die antwoordvorm. Daar is geen inhoud hier nie, kies asseblief waarheen jy volgende wil gaan.
+            Dankie dat jy hierdie vorm getoets het. Kom asseblief gou weer terug.
+        </div>
+        <br>
+        <input type="button" onclick="window.history.back()" value="← Terug">
+        <input type="button" onclick="dirUp()" value="↑ Indeks">
+    </body>
+</html>

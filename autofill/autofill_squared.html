@@ -51,7 +51,7 @@
 
   <section class="container">
     <div class="column">
-		<form name="up" id="passwordForm" action="../translate_autofill/response_en.html">
+		<form name="password" id="passwordForm" action="../translate_autofill/response_en.html">
 			Username: <input type="text" name="username" id="up_username"><br>
 			Password: <input type="password" name="password" id="up_password"><br>
 			<div style="margin: 10px 25px; display:flex; gap:15px;">
@@ -59,6 +59,31 @@
 				<input type="submit" value="Submit" id="password_submit">
 			</div>
 		</form>
+
+    <div class="vertical-spacer" style="height:50px"></div>
+
+    <form name="addr1" id="addressForm" action="../translate_autofill/response_en.html">
+      Name: <textarea name="name" placeholder="Name" rows="1" cols="20"></textarea><br>
+      Address: <input type="text" name="address" placeholder="Address"><br>
+      City: <input type="text" name="city" placeholder="City"><br>
+      State: <select name="state">
+        <option value="CA">CA</option>
+        <option value="MA">MA</option>
+        <option value="NY">NY</option>
+        <option value="MD">MD</option>
+        <option value="OR">OR</option>
+        <option value="OH">OH</option>
+        <option value="IL">IL</option>
+        <option value="DC">DC</option>
+        <option value="WA">WA</option>
+      </select> <br>
+      Zip: <input name="zip" id="form_zip" placeholder="Zip"> <br>
+      Country: <input name="country" id="form_country" placeholder="Country"> <br>
+			<div style="margin: 10px 25px; display:flex; gap:15px;">
+				<input type="reset" value="Reset">
+				<input type="submit" value="Submit" id="address_submit">
+			</div>
+    </form>
     </div>
 
 

@@ -37,7 +37,7 @@
 
     .editable {
         margin-left: 50px;
-        height:200px;
+        height:100px;
         width:400px;
         border: 1px solid black;
         font-family: monospace;
@@ -50,30 +50,54 @@
 
   <section class="container">
     <div class="column">
-        <h2> Textarea: Autocomplete <span style="color:red">On</h2>
+        <h3> Textarea: Writing Suggestions <span style="color:red">True</h3>
+        <textarea class="editable" writingsuggestions="true"
+        placeholder="Textarea with writing suggestions on..."></textarea>
+
+        <h3> Textarea: Writing Suggestions <span style="color:red">False</h3>
+        <textarea class="editable" writingsuggestions="false"
+        placeholder="Textarea with writing suggestions off..."></textarea>
+
+        <h3> Textarea: Writing Suggestions <span style="color:red">Inherit</h3>
+        <textarea class="editable"
+        placeholder="Textarea with no writing suggestions attribute..."></textarea>
+
+        <h3> Textarea: Autocomplete <span style="color:red">On</h3>
         <textarea class="editable" autocomplete="on"
         placeholder="Textarea with autocomplete on..."></textarea>
 
-        <h2> Textarea: Autocomplete <span style="color:red">Off </h2>
+        <h3> Textarea: Autocomplete <span style="color:red">Off </h3>
         <textarea class="editable" autocomplete="off"
             placeholder="Textarea with autocomplete off..."></textarea>
 
-        <h2> Textarea: Autocomplete <span style="color:red">Other</h2>
+        <h3> Textarea: Autocomplete <span style="color:red">Other</h3>
         <textarea class="editable" autocomplete="something_random"
             placeholder="Textarea with autocomplete other..."></textarea>
     </div>
 
 
     <div class="column">
-        <h2> Content Editable: Autocomplete <span style="color:red">On </h2>
+        <h3> Content Editable: Writing Suggestions <span style="color:red">True </h3>
+        <div contenteditable="true" class="editable" autocomplete="on"
+            placeholder="Content-editable with writing suggestions on..."></div>
+
+        <h3> Content Editable: Writing Suggestions <span style="color:red">False </h3>
+        <div contenteditable="true" class="editable" autocomplete="on"
+            placeholder="Content-editable with writing suggestions on..."></div>
+
+        <h3> Content Editable: Writing Suggestions <span style="color:red">Inherit </h3>
+        <div contenteditable="true" class="editable" autocomplete="on"
+            placeholder="Content-editable with no writing suggestions attribute..."></div>
+
+        <h3> Content Editable: Autocomplete <span style="color:red">On </h3>
         <div contenteditable="true" class="editable" autocomplete="on"
             placeholder="Content-editable with autocomplete on..."></div>
 
-        <h2> Content Editable: Autocomplete <span style="color:red">Off </h2>
+        <h3> Content Editable: Autocomplete <span style="color:red">Off </h3>
         <div contenteditable="true" class="editable" autocomplete="off"
             placeholder="Content-editable with autocomplete off..."></div>
 
-        <h2> Content Editable: Autocomplete <span style="color:red">Other </h2>
+        <h3> Content Editable: Autocomplete <span style="color:red">Other </h3>
         <div contenteditable="true" class="editable" autocomplete="something_random"
             placeholder="Content-editable with autocomplete other..."></div>
     </div>

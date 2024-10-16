@@ -1,0 +1,32 @@
+<body>
+
+    <h3>Normal radio groups</h3>
+    <ul>
+        <li><input type="radio" id="group1option1" name="group1" value="option1" checked="true">
+            <label for="group1option1">Group 1 Option 1</label>
+        <li><input type="radio" id="group1option2" name="group1" value="option2">
+            <label for="group1option2">Group 1 Option 2</label>
+        <li><input type="radio" id="group1option3" name="group1" value="option3">
+            <label for="group1option3">Group 1 Option 3</label>
+    </ul>
+
+    <h3>Emulated radio group with label</h3>
+    <ul role="radiogroup" aria-label="emulated group 1">
+        <li><span id="group2option1" role="radio" aria-checked="true" aria-labelledby="group2option1label">
+            <label id="group2option1label">Group 2 Option 1</label>
+        <li><span id="group2option2" role="radio" aria-checked="false" aria-labelledby="group2option2label">
+            <label id="group2option2label">Group 2 Option 2</label>
+        <li><span id="group2option3" role="radio" aria-checked="false" aria-labelledby="group2option3label">
+            <label id="group2option3label">Group 2 Option 3</label>
+    </ul>
+
+    <h3>Emulated radio group with no label</h3>
+    <ul role="radiogroup">
+        <li><span id="group3option1" role="radio" aria-checked="true" aria-labelledby="group3option1label">
+            <label id="group3option1label">Group 3 Option 1</label>
+        <li><span id="group3option2" role="radio" aria-labelledby="group3option2label">
+            <label id="group3option2label">Group 3 Option 2</label>
+        <li><span id="group3option3" role="radio" aria-labelledby="group3option3label">
+            <label id="group3option3label">Group 3 Option 3</label>
+    </ul>
+
